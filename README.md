@@ -1,9 +1,10 @@
 # tiger-react-cli
 
-> 技术栈：
-123
-123
-321
+> react：
+> redux：
+> react-router：
+> antd按需加载：
+> less：
 
 ## Build Setup
 
