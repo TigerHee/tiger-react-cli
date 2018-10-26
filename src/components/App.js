@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import {
-  Route,
   NavLink,
   BrowserRouter
 } from "react-router-dom";
 import logo from '../assets/img/logo.svg';
 import './App.less';
-
 import { Button } from 'antd'
-import Page1 from './page1/page1'
-import Page2 from './page2/page2'
+import RouterInit from './router'
 
 class App extends Component {
   render() {
@@ -31,8 +28,7 @@ class App extends Component {
             </div>
           </header>
           <div className="content">
-            <Route exact path="/" component={Page1} />
-            <Route path="/page2" component={Page2} />
+            <RouterInit></RouterInit>
           </div>
         </div>
       </BrowserRouter>
