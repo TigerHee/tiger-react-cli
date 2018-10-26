@@ -1,4 +1,5 @@
-const todos = (state = [], action) => {
+import initSate from './initState'
+const todos = (state = initSate.todos, action) => {
   switch (action.type) {
     case 'ADD_TODO':
       return [

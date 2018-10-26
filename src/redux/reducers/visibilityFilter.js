@@ -1,4 +1,5 @@
-const visibilityFilter = (state = 'SHOW_ALL', action) => {
+import initSate from './initState'
+const visibilityFilter = (state = initSate.filter, action) => {
   switch (action.type) {
     case 'SET_VISIBILITY_FILTER':
       return action.filter
