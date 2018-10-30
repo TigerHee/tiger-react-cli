@@ -1,6 +1,7 @@
 import React from 'react'
 import {
   Route,
+  Switch
 } from "react-router-dom";
 import Loadable from 'react-loadable'
 
@@ -17,10 +18,10 @@ const Page2 = Loadable({
 
 const RouterInit = () => {
   return (
-    <>
+    <Switch>
       <Route exact path="/" component={Page1} />
       <Route path="/page2" component={Page2} />
-    </>
+    </Switch>
   )
 }
 export default RouterInit
