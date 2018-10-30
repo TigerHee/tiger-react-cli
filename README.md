@@ -2,7 +2,7 @@
 > 技术栈：
 > react、
 > redux、
-> react-router、
+> react-router异步加载、
 > antd按需加载、
 > less、
 
