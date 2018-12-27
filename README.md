@@ -12,7 +12,7 @@ Inside that directory, it will generate the initial project structure and instal
 ```
 tiger-react-cli
 ├── README.md
-├── node_modules
+├── node_modules        //node包
 ├── package.json
 ├── .gitignore
 ├── public
@@ -20,17 +20,17 @@ tiger-react-cli
 │   ├── index.html
 │   └── manifest.json
 └── src
-    ├── assets
-        ├── style
-        ├── img
-        └── js
-    ├── components
-    ├── page
-    ├── servers
-    ├── redux
-        ├── actions
-        ├── reducers
-        └── stores.js
+    ├── assets          //静态资源
+    │   ├── style       //css文件
+    │   ├── img         //图片
+    │   └── js          //js包
+    ├── components      //组件
+    ├── page            //页面及路由
+    ├── servers         //ajax请求方法
+    ├── redux           //redux数据管理
+    │   ├── actions
+    │   ├── reducers
+    │   └── stores.js
     ├── index.js
     ├── index.less
     └── serviceWorker.js
@@ -40,7 +40,7 @@ No configuration or complicated folder structures, just the files you need to bu
 Once the installation is done, you can open your project folder:
 
 ```sh
-cd my-app
+cd tiger-react-cli
 ```
 
 ## Build Setup
