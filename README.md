@@ -47,13 +47,13 @@ cd tiger-react-cli
 
 ``` bash
 # install dependencies
-npm install
+npm install / yarn install
 
 # serve with hot reload at localhost:3000
-npm start
+npm start / yarn start
 
 # build for production with minification
-npm run build
+npm run build / yarn build
 
 ```
 
