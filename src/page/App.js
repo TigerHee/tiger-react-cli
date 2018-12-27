@@ -3,7 +3,7 @@ import {
   NavLink,
   BrowserRouter
 } from "react-router-dom";
-import logo from '../assets/img/logo.svg';
+import logo from '@/assets/img/logo.svg';
 import './App.less';
 import { Button } from 'antd'
 import RouterInit from './router'
@@ -20,11 +20,11 @@ class App extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button type="primary">tigerHee</Button>
+              <Button icon="search" type="primary">tigerHee</Button>
             </a>
             <div className="navigation">
-              <Button type="default"><NavLink to="/">Page1</NavLink></Button>
-              <Button type="default"><NavLink to="/page2">Page2</NavLink></Button>
+              <Button type="dashed" ghost><NavLink to="/">Page1</NavLink></Button>
+              <Button type="dashed" ghost><NavLink to="/page2">Page2</NavLink></Button>
             </div>
           </header>
           <div className="content">
@@ -32,7 +32,6 @@ class App extends Component {
           </div>
         </div>
       </BrowserRouter>
-
     );
   }
 }

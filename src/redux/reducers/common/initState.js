@@ -1,5 +1,5 @@
 const initSate = {
-  todos: [],
-  filter: 'SHOW_ALL'
+  testData: 'testData'
 }
+
 export default initSate
