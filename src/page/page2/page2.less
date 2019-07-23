@@ -3,10 +3,15 @@
   height: 100%;
   .ant-carousel .slick-slide {
     text-align: center;
-    height: 333px;
-    line-height: 333px;
-    background: #ff6100;
+    height: 240px;
+    line-height: 240px;
     overflow: hidden;
+    &:nth-of-type(odd){
+      background: #ff6100;
+    }
+    &:nth-of-type(even){
+      background: #2a7cf1;
+    }
   }
   .ant-carousel .slick-slide h3 {
     color: #fff;

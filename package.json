@@ -48,6 +48,7 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
     "resolve": "1.8.1",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.0",
@@ -119,10 +120,17 @@
           "libraryName": "antd",
           "style": "css"
         }
+      ],
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
       ]
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.4.4",
     "babel-plugin-import": "^1.10.0",
     "less": "^3.8.1",
     "less-loader": "^4.1.0"

@@ -49,7 +49,7 @@ cd tiger-react-cli
 # install dependencies
 npm install / yarn install
 
-# serve with hot reload at localhost:3000
+# serve with hot reload at localhost:9999
 npm start / yarn start
 
 # build for production with minification
