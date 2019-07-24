@@ -1,5 +1,5 @@
 const initSate = {
-  testData: 'testData'
+  testData: 1314
 }
 
 export default initSate

@@ -2,9 +2,11 @@
 > 技术栈：
 > react、
 > redux、
+> redux-saga、
 > react-router异步加载、
 > antd按需加载、
 > less、
+> es6装饰器
 
 It will create a directory called `tiger-react-cli` inside the current folder.<br>
 Inside that directory, it will generate the initial project structure and install the transitive dependencies:
@@ -30,6 +32,7 @@ tiger-react-cli
     ├── redux           //redux数据管理
     │   ├── actions
     │   ├── reducers
+    │   ├── saga
     │   └── stores.js
     ├── index.js
     ├── index.less
