@@ -2,7 +2,7 @@ import { put, call, take, select } from 'redux-saga/effects'
 
 export const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 
-export function* addItem1(value) {
+export function* fakeRequest(value) {
   try {
     return yield call(delay, 1000)
   } catch (err) {
@@ -15,7 +15,7 @@ export function* commonSaga(val) {
     // 开始监听action UPDATE_STATE_SAGA
     let request = yield take('UPDATE_STATE_SAGA')
     // 模拟请求延时
-    let response = yield call(addItem1, request)
+    let response = yield call(fakeRequest, request)
     // 获取testData的旧值
     let oldVal = yield select(state => state.common.testData)
     console.log('oldVal === ', oldVal)
