@@ -15,6 +15,7 @@ export function* commonSaga(val) {
     // 开始监听action UPDATE_STATE_SAGA
     let request = yield take('UPDATE_STATE_SAGA')
     // 模拟请求延时
+    // eslint-disable-next-line no-unused-vars
     let response = yield call(fakeRequest, request)
     // 获取testData的旧值
     let oldVal = yield select(state => state.common.testData)

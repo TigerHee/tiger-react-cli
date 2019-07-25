@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './page1.less'
 import { connect } from 'react-redux'
-import { update_state, update_state_asyncSaga } from "@/redux/actions"
+import { update_state, update_state_asyncSaga, update_state_TakeLatest } from "@/redux/actions"
 import { Button } from 'antd'
 
 @connect((state) => ({
@@ -12,6 +12,9 @@ import { Button } from 'antd'
   },
   updateStateAsyncSaga(val) {
     dispatch(update_state_asyncSaga(val))
+  },
+  updateStateTakeLatest(val) {
+    dispatch(update_state_TakeLatest(val))
   },
 }))
 
@@ -33,6 +36,12 @@ class Page1 extends Component {
       testData: val
     });
   }
+  _changeReduxTakeLatset = () => {
+    const val = +new Date();
+    this.props.updateStateTakeLatest({
+      testData: val
+    });
+  }
 
   render() {
     const { testData } = this.props;
@@ -42,7 +51,11 @@ class Page1 extends Component {
         <div className="page1">
           <div>
             <Button onClick={(e) => this._changeRedux()} type="primary">change redux value</Button>
+            <br /><br />
             <Button onClick={(e) => this._changeReduxAsync()} type="primary">change redux value async</Button>
+            <br /><br />
+            <Button onClick={(e) => this._changeReduxTakeLatset()} type="primary">change redux value TakeLatest</Button>
+            <br /><br />
           </div>
           <div className="page1-testData">{testData}</div>
         </div>

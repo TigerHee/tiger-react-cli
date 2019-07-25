@@ -8,6 +8,11 @@ export const update_state_asyncSaga = payload => ({
   payload
 })
 
+export const update_state_TakeLatest = payload => ({
+  type: 'UPDATE_STATE_TAkELATEST',
+  payload
+})
+
 export const update_other_state = payload => ({
   type: 'UPDATE_OTHER_STATE',
   payload
