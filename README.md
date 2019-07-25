@@ -32,7 +32,7 @@ tiger-react-cli
     ├── redux           //redux数据管理
     │   ├── actions
     │   ├── reducers
-    │   ├── saga
+    │   ├── saga        //redux-saga
     │   └── stores.js
     ├── index.js
     ├── index.less
