@@ -45,7 +45,6 @@ class Page1 extends Component {
 
   render() {
     const { testData } = this.props;
-    console.log('testData === ', testData)
     return (
       <>
         <div className="page1">

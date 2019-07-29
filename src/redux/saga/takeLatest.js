@@ -2,14 +2,21 @@ import { put, takeLatest } from 'redux-saga/effects'
 
 export const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 
-export function* takeListAsync() {
-  yield delay(1000)
-  yield put({
-    type: 'UPDATE_STATE',
-    payload: {
-      testData: +new Date()
-    }
-  })
+export function* takeListAsync(action) {
+  try {
+    yield delay(1000)
+    yield put({
+      type: 'UPDATE_STATE',
+      payload: {
+        testData: action.payload.testData
+      }
+    })
+  } catch (error) {
+    yield put({
+      type: 'UPDATE_ERROE',
+      error
+    })
+  }
 }
 
 // takeLatest
