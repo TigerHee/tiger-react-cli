@@ -3,7 +3,7 @@ import {
   NavLink,
   BrowserRouter
 } from "react-router-dom";
-import logo from '@/assets/img/logo.svg';
+import logo from '@src/assets/img/logo.svg';
 import './App.less';
 import { Button } from 'antd'
 import RouterInit from './router'

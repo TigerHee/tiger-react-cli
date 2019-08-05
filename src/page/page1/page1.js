@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './page1.less'
 import { connect } from 'react-redux'
-import { update_state, update_state_asyncSaga, update_state_TakeLatest } from "@/redux/actions"
+import { update_state, update_state_asyncSaga, update_state_TakeLatest } from "@src/redux/actions"
 import { Button } from 'antd'
 
 @connect((state) => ({

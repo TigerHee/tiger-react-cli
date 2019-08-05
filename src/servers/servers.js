@@ -1,4 +1,4 @@
-import axios from '@/servers/interceptors';
+import axios from '@src/servers/interceptors';
 //请求接口数据的方法规整
 
 // /* 获取IP信息等 */
