@@ -7,6 +7,7 @@
 > antd按需加载、
 > less、
 > es6装饰器
+> jest
 
 It will create a directory called `tiger-react-cli` inside the current folder.<br>
 Inside that directory, it will generate the initial project structure and install the transitive dependencies:
